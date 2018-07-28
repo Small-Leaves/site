@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录页</title>
+<style type="text/css">
+body{
+	margin: 0;
+	padding: 0;
+	background: #eff0f4;
+}
+header{
+	width: 100%;
+    background: #5fc0cd;
+    padding: 0 5%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+}
+header p{
+    float: left;
+    width: 30%;
+    font-size: 32px;
+    color: #fff;
+}
+.clear{
+	clear: both;
+}
+header .center{
+    text-align: center;
+}
+header .left{
+    text-align: left;
+}
+header .right{
+    text-align: right;
+}
+form{
+	margin-top: 100px
+}
+form .txt{
+    width: 100%;
+    line-height: 50px;
+    padding: 0;
+    padding: 22px;
+    padding-left: 144px;
+    margin-top: 16px;
+    border: 0;
+    font-size: 32px;
+    box-sizing: border-box;
+
+}
+ input::-webkit-input-placeholder{
+            color:#e1e5e7;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:#e1e5e7;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:#e1e5e7;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:#e1e5e7;	
+        }
+input.phone{
+	background: url(images/phone.jpg) no-repeat left center;
+    background-color: #fff;
+}
+input.code{
+	background: url(images/code.jpg) no-repeat left center;
+    background-color: #fff;
+}
+input.submit{
+	background: #5fc0cd;
+    line-height: 100px;
+    width: 100%;
+    font-size: 36px;
+    color: #fff;
+    border: none;
+    margin-top: 68px;
+}
+input.submit:hover{
+    cursor: pointer;
+    background: #cd5f5f;
+}
+.a{
+	text-align: right;
+    display: block;
+    font-size: 32px;
+    line-height: 50px;
+    color: #5fc0cd;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 38px;
+}
+</style>
+</head>
+<body>
+<header>
+<p class="left">关闭</p>
+<p class="center">登录</p>
+<p class="right">注册</p>
+<div class="clear"></div>
+</header>
+<form action="#">
+		<input type="txt" class="txt phone" placeholder="请输入手机号" name="phone">
+		<input type="password" class="txt code" placeholder="请输入密码" name="code">
+	<input type="submit" class="submit" name="提交">
+	<a class="a" href="#">忘记密码？</a>
+</form>
+</body>
+</html>

@@ -2,37 +2,39 @@
 <html>
 <head>
 	<title>5</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<meta charset="utf-8">
 <style>
-html{
-	font-size: 12px;
-}
+
 body,p{
 	margin:0 auto;
 	padding: 0
 }
+.wrapper,footer{
+
+}
 header {
     background: #5fc0cd;
-    height: 80px;
+    height: 6.2vh;
     position: relative;
 }
 
 header .back {
     position: absolute;
-    left: 30px;
-    font-size: 2.25rem;
-    line-height: 80px;
+    left: 4.2vh;
+    font-size: 2.25vh;
+    line-height: 6.2vh;
     top: 0;
     color: #fff;
 }
 header .title {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2.25vh;
     color: #fff;
-    line-height: 80px;
+    line-height: 6.2vh;
 }
 main .basic {
-    height: 323px;
+    height: 35vh;
     width: 100%;
     position: relative;
     background: url(images/bg.jpg) no-repeat;
@@ -40,50 +42,51 @@ main .basic {
 }
 main .basic .content {
     position: absolute;
-    top: 78px;
+    top: 8vh;
     left: 30px;
 }
 main .basic .content img {
-    width: 170px;
-    height: 170px;
+    width: 13vh;
+    height: auto;
+    float: left;
 
 }
 .basic .txt{
-	position: absolute;
-    top: 40px;
-    left: 207px;
-    width: 200px;
+    width: 22vh;
     color: #fff;
+    float: left;
+    margin-top: 2vh;
+    margin-left: 20px;
 }
 .basic .txt p{
 	display: inline-block;
 }
 .basic .txt p.name{
-	font-size: 2.25rem;
+	font-size: 3.25vh;
 }
 .basic .txt p.age{
-	font-size: 1.75rem;
-	margin-left: 20px;
+    font-size: 3.25vh;
+    margin-left: 12px;
 }
 .basic .txt p.adress{
-    font-size: 1.5rem;
+    font-size: 1.5vh;
     display: block;
     margin-top: 9px;
-    padding-left: 35px;
+    padding-left: 30px;
     background: url(images/ad.png) no-repeat;
-    background-position: 6px 6px;
+    background-size: auto 100%;
 }
 /*detail*/
 .detail{
-	padding-left: 30px;
+	padding-left: 4.2vh;
 }
 .detail p,.detail span{
-	font-size: 2rem;
-	line-height: 100px;
+    font-size: 2.5vh;
+    line-height: 7.8vh;
 }
 .detail .title,.detail>div{
 	border-bottom: 1px solid #e1e5e7;
-	padding-left: 30px;
+	padding-left: 4.2vh;
 }
 .detail>div.i-box{
     display: flex;
@@ -94,15 +97,16 @@ main .basic .content img {
 	background: url(images/line.png) no-repeat left center;
 }
 .detail div span{
-	padding-left: 34px;
-	background: url(images/star.png) left center no-repeat;
+    padding-left: 38px;
+    background: url(images/star.png) left center no-repeat;
+    background-size: auto 100%;
 }
 .detail div em{
     width: 1px;
     background: #e1e5e7;
-    height: 26px;
+    height: 2vh;
     display: inline-block;
-    margin: 0 20px;
+margin: 0 2.2vh;
 }
 .detail .item p{
 	display: inline-block;
@@ -114,47 +118,49 @@ main .basic .content img {
 	color:#e26163 ;
 }
 .detail .item p.introduction{
-    font-size: 1.75rem;
+    font-size: 2vh;
     line-height: 2;
-    padding: 20px 0;
-    width: calc(100% - 184px);
+    padding: 2vh 0;
+    width: calc(100% - 26.4vh);
+    margin-left: 0;
 }
 .detail .item div{
     display: inline-block;
-    width: 177px;
+    width: 16.4vh;
+}
+main{
+    margin-bottom: 100px;
 }
 footer{
-	margin:0 auto;
-	margin-top: 100px;
+    width: 96vw;
     text-align: center;
-    margin-bottom: 50px;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    padding: 2vh 2vw;
 }
 footer a {
-    width: 42%;
-    height: 88px;
+    width: 42vw;
     display: inline-block;
     border: 2px solid #5fc0cd;
     border-radius: 8px;
     text-decoration: none;
-    line-height: 88px;
-    font-size: 2.13rem;
+    line-height: 6.9vh;
+    font-size: 2.13vh;
     color: #5fc0cd;
     text-align: center;
-    margin:0 12px;
+    margin: 0 1.7vw;
 }
 footer a.link{
 	background: #5fc0cd;
 	color: #fff;
 }
-@media screen and (max-width:800px){
-	html{
-		font-size: 16px;
-	}
-} 
+
 
 </style>
 </head>
 <body>
+<div class="wrapper">
 <header class="header">
 	<div class="back"><</div>
 	<div class="title">个人主页</div>
@@ -203,9 +209,12 @@ footer a.link{
 <div class="button"></div>
 </main>
 <footer>
+<div class="content">
 <a href="#" class="message">留言</a>
 <a href="#" class="link">电话联系</a>
+</div>
 </footer>
+</div>
 </body>
 </html>
 

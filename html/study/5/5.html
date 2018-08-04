@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5</title>
+	<meta charset="utf-8">
+<style>
+html{
+	font-size: 12px;
+}
+body,p{
+	margin:0 auto;
+	padding: 0
+}
+header {
+    background: #5fc0cd;
+    height: 80px;
+    position: relative;
+}
+
+header .back {
+    position: absolute;
+    left: 30px;
+    font-size: 2.25rem;
+    line-height: 80px;
+    top: 0;
+    color: #fff;
+}
+header .title {
+    text-align: center;
+    font-size: 2.25rem;
+    color: #fff;
+    line-height: 80px;
+}
+main .basic {
+    height: 323px;
+    width: 100%;
+    position: relative;
+    background: url(images/bg.jpg) no-repeat;
+    background-size: cover;
+}
+main .basic .content {
+    position: absolute;
+    top: 78px;
+    left: 30px;
+}
+main .basic .content img {
+    width: 170px;
+    height: 170px;
+
+}
+.basic .txt{
+	position: absolute;
+    top: 40px;
+    left: 207px;
+    width: 200px;
+    color: #fff;
+}
+.basic .txt p{
+	display: inline-block;
+}
+.basic .txt p.name{
+	font-size: 2.25rem;
+}
+.basic .txt p.age{
+	font-size: 1.75rem;
+	margin-left: 20px;
+}
+.basic .txt p.adress{
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 9px;
+    padding-left: 35px;
+    background: url(images/ad.png) no-repeat;
+    background-position: 6px 6px;
+}
+/*detail*/
+.detail{
+	padding-left: 30px;
+}
+.detail p,.detail span{
+	font-size: 2rem;
+	line-height: 100px;
+}
+.detail .title,.detail>div{
+	border-bottom: 1px solid #e1e5e7;
+	padding-left: 30px;
+}
+.detail>div.i-box{
+    display: flex;
+    justify-content:center;
+    align-items:Center;
+}
+.detail .title{
+	background: url(images/line.png) no-repeat left center;
+}
+.detail div span{
+	padding-left: 34px;
+	background: url(images/star.png) left center no-repeat;
+}
+.detail div em{
+    width: 1px;
+    background: #e1e5e7;
+    height: 26px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.detail .item p{
+	display: inline-block;
+}
+.detail .item p.heading{
+	color: 	#999;
+}
+.detail .item p.price{
+	color:#e26163 ;
+}
+.detail .item p.introduction{
+    font-size: 1.75rem;
+    line-height: 2;
+    padding: 20px 0;
+    width: calc(100% - 184px);
+}
+.detail .item div{
+    display: inline-block;
+    width: 177px;
+}
+footer{
+	margin:0 auto;
+	margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+footer a {
+    width: 42%;
+    height: 88px;
+    display: inline-block;
+    border: 2px solid #5fc0cd;
+    border-radius: 8px;
+    text-decoration: none;
+    line-height: 88px;
+    font-size: 2.13rem;
+    color: #5fc0cd;
+    text-align: center;
+    margin:0 12px;
+}
+footer a.link{
+	background: #5fc0cd;
+	color: #fff;
+}
+@media screen and (max-width:800px){
+	html{
+		font-size: 16px;
+	}
+} 
+
+</style>
+</head>
+<body>
+<header class="header">
+	<div class="back"><</div>
+	<div class="title">个人主页</div>
+</header>
+<main>
+<div class="basic">
+	<div class="content">
+		<img src="images/ph.png">
+		<div class="txt">
+			<p class="name">高素雅</p>
+			<p class="age">51岁</p>
+			<p class="adress">北京.通州.果园</p>
+		</div>
+	</div>
+</div>
+<div class="detail">
+	<p class="title">专业技能</p>
+	<div >
+	<span class="line">住家</span>
+	<em></em>
+	<span>不含餐</span>
+	</div>
+	<div class="item">
+		<p class="heading">从业年限</p>
+		<em></em>
+		<p class="content">0~3年</p>
+	</div>
+	<div class="item">
+		<p class="heading">工作时间</p>
+		<em></em>
+		<p class="content">全天</p>
+	</div>
+	<div class="item">
+		<p class="heading">服务价格</p>
+		<em></em>
+		<p class="content price">25元/小时</p>
+	</div>
+	<div class="item i-box">
+		<div>
+		<p class="heading">自我介绍</p>
+		<em></em>
+		</div>
+		<p class="content introduction">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</p>
+	</div>
+</div>
+<div class="button"></div>
+</main>
+<footer>
+<a href="#" class="message">留言</a>
+<a href="#" class="link">电话联系</a>
+</footer>
+</body>
+</html>
+
+
+<!--
+遇到的问题，当一个页面开始变得复杂的时候，class命名规范变得重要，我现在每个div、p元素都命名了，反而变了很乱。
+另外，页面编写可选择的路径变多，有些迷茫
+
+-->

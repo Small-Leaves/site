@@ -2,40 +2,57 @@
 <html>
 <head>
 	<title>登录页</title>
+	<meta charset="utf-8">
 <style type="text/css">
-body{
+body,p{
 	margin: 0;
 	padding: 0;
+	
+}
+body{
 	background: #eff0f4;
+}
+a{
+text-decoration: none;
+}
+input{
+	outline: none;
 }
 header{
 	width: 100%;
-    background: #5fc0cd;
-    padding: 0 5%;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
+	background: #5fc0cd;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+	top: 0;
+	height: 100px;
 }
-header p{
+header p,header a{
     float: left;
     width: 30%;
     font-size: 32px;
     color: #fff;
+    line-height: 100px;
 }
 .clear{
 	clear: both;
 }
 header .center{
     text-align: center;
+    width: 100%;
 }
 header .left{
     text-align: left;
+    position: absolute;
+    left: 30px;
 }
 header .right{
     text-align: right;
+    position: absolute;
+    right: 30px;
 }
 form{
-	margin-top: 100px
+	margin-top: 0px;
 }
 form .txt{
     width: 100%;
@@ -96,9 +113,9 @@ input.submit:hover{
 </head>
 <body>
 <header>
-<p class="left">关闭</p>
+<a  class="left" href="#">关闭</a>
 <p class="center">登录</p>
-<p class="right">注册</p>
+<a class="right" href="#">注册</a>
 <div class="clear"></div>
 </header>
 <form action="#">
